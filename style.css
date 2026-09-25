@@ -648,7 +648,7 @@ hr {
     }
 }
 
-@media (max-width: 250px) {
+@media (max-width: 450px) {
     .profiles {
         flex-direction: column;
         align-items: center;

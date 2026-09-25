@@ -1,28 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="js.js" defer></script>
-  <link rel="icon" href="cropped_circle_image.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axrena</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <!-- Header Profile -->
-  <header class="profile-emma">
-    <img src="Emma PLZA.png" alt="Foto Profil" class="profile-pic">
 
-    <!-- Bungkus teks + list dalam satu container -->
-    <div class="profile-info">
-      <h1 class="profile-title">Profile</h1>
-      <ul class="Name">
-        <li><a href="https://open.spotify.com/playlist/57PMNqWk8RoXlegzp3IRU4" target="_blank">Spotify</a></li>
-        <li><a href="https://ko-fi.com/axvmc" target="_blank">Ko-Fi</a></li>
-        <li><a href="https://github.com/Axvmc" target="_blank">Github</a></li>
-        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-      </ul>
+<!-- ========== HEADER ========== -->
+<header class="navbar">
+    <div class="logo-wrapper">
+        <div class="logo">
+            <span>Axrena <span class="logo-accent"> |</span></span>
+        </div>
+        
+        <!-- TOMBOL DARK/LIGHT MODE - SEKARANG SAMPING LOGO -->
+        <button class="theme-toggle" id="themeToggle">
+            <span class="toggle-icon">🌙</span>
+        </button>
     </div>
-  </header>
+    
+    <nav class="nav-menu">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link" id="more">More Info</a>
+        <a href="work.html" class="nav-link" id="more">Work</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+    <!-- ========== SIDEBAR (POJOK KANAN) ========== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>More Info</h3>
+            <button class="sidebar-close" id="sidebarClose">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <div class="identity-item">
+                <span class="identity-label">Full Name</span>
+                <span class="identity-value">Aksel Tristan Naufal</span>
+            </div>
+            <div class="identity-item">
+                <span class="identity-label">Place And Date Of Birth</span>
+                <span class="identity-value">Jakarta Selatan, 13 April 2009</span>
+            </div>
+            <div class="identity-item">
+                <span class="identity-label">Location</span>
+                <span class="identity-value">South Jakarta</span>
+            </div>
+            <div class="identity-item">
+                <span class="identity-label">Hobby</span>
+                <span class="identity-value">Voxel Artist, Game Modding, Web Dev, Worldbuilder </span>
+            </div>
+            <div class="identity-item">
+                <span class="identity-label">Email Contact</span>
+                <span class="identity-value">NAMAAKUN</span>
+            </div>
+            <div class="identity-item">
+                <span class="identity-label">Contact Number</span>
+                <span class="identity-value">"Itulah Inilah, kapanpun terjadilah"</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile utama -->
+    <div class="container">
+        <img src="photo/Crazy-Person-Main-Profile.png" alt="AkselProfile" class="photo">
+        <div class="text">
+            <h1>Aksel T.N</h1>
+            <hr class="main">
+            <p class="p1">Just a normal teenager, Dude <br> </p>
+        </div>  
+    </div>
+
+    <!-- GABUNGAN Introduction -->
+    <div class="about-section">
+        <div class="about">
+            <h1>Introduction</h1>
+        </div>
+        <div class="about-text"> 
+            <p>Hi, gng, I'm <b>Aksel.</b><br>
+A Student, Creator & Aspiring Game Developer. <br> Creating Websites, 3D Models, <br class="mobile-only"> Minecraft Mod or PBR Projects, Fictional World Creation, 
+<br> and other things I find interesting.</p>
+        </div>
+    </div>
+
+    <!-- Profile bawah -->
+    <div class="profiles">
+        <div class="card">
+            <img src="photo/Crazy-Person-Profile-1.jpeg" class="photo2">
+            <h4>3D Voxel Artist</h4>
+            <p>Mastering the creation of 3D block or voxel-shaped models.</p>
+            <div class="about-tags">
+                <span>🧊 3D Artist</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="photo/Crazy-Person-Profile-2.png" class="photo2">
+            <h4>3D Voxel Animator</h4>
+            <p>Mastering the animation of a 3D block or voxel model.</p>
+            <div class="about-tags">
+                <span>🎬 Animator</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="photo/Crazy-Person-Profile-3.png" class="photo2">
+            <h4>Web Developer</h4>
+            <p>Master the basics of creating a website.</p>
+            <div class="about-tags">
+                <span>💻 Web Developer</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="photo/Crazy-Person-Profile-5.png" class="photo2">
+            <h4>UI Designer</h4>
+            <p>Mastering the creation of UI design for a website.</p>
+            <div class="about-tags">
+                <span>💻 UI Designer</span>
+            </div>
+        </div>
+
+            <div class="card">
+            <img src="photo/Crazy-Person-Profile-4.jpg" class="photo2">
+            <h4>Worldbuilder</h4>
+            <p>Mastering the art of consistently designing fictional world settings.</p>
+            <div class="about-tags">
+                <span>🌍 Worldbuilder</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="text-principle">
+            <p>“Pain is just an indicator.” <br> 
+                “Silence is not empty. Most people simply refuse to listen.” <br> 
+                “Your heartbeat changed… why?” <br> 
+                “Not every problem requires calculation.”</p>
+                <h4><i>Voices from the ink.</i></h4>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

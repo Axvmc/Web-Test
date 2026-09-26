@@ -669,11 +669,24 @@ hr {
         font-size: 14px;
     }
     .profiles {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        gap: 20px;
+        justify-content: center;
     }
+
+    .card {
+        width: 150px;
+        box-sizing: border-box;
+    }
+
+    .card:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+
     .container-box {
-    width: 95%;
+        width: 95%;
     }
 }
 
